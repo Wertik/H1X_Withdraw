@@ -1,0 +1,34 @@
+# Configuration for Withdraw plugin for H1X network-ish mady by Wertik1206 from the Port @ devport.space
+
+  enable-debug: true
+  plugin-prefix: '&eWithdraw &8>> '
+
+  # Here you can customize le Cheque
+
+  withdraw-item:
+    type: PAPER
+    name: '&6Bank note'
+    lore:
+      - '&7Click to accept a &e%value%&6$ &7cheque.'
+      - ''
+      - "&7Withdrawn from %player%'s account."
+    glow: false
+
+  # Messages
+
+  help:
+    - "&8&m--------&e Withdraw &8&m-------"
+    - "&e/withdraw <amount> &8- &7Withdraw money from your account and deposit them to a note."
+
+  only-players: '%prefix%&cThis command is only for players.'
+
+  withdraw: '%prefix%&7Successfully withdrew &e%value%&6$&7 from your account and deposited to a note.'
+  withdraw-fail: '%prefix%&cCould not withdraw the money.'
+  withdraw-fail-full: '%prefix%&cCould not withdraw, inventory full.'
+  withdraw-fail-number: '%prefix%&cAmount has to be a positive number.'
+  withdraw-fail-perm: '%prefix%&cYou are missing permission to withdraw from your account.'
+  withdraw-fail-eco: '%prefix%&cYour account balance is insufficient to withdraw this amount.'
+
+  redeem: '%prefix%&7Redeemed a note for &e%value%&6$&7.'
+  redeem-fail: '%prefix%&cCould not redeem the note.'
+  redeem-fail-perm: '%prefix%&cYou are missing permission to redeem a note.'

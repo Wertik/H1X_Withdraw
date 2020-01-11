@@ -1,0 +1,16 @@
+name: H1X_Withdraw
+main: space.devport.wertik.withdraw.Main
+author: Wertik1206
+version: 1.0
+commands:
+  withdraw:
+    aliases: [wd, withd, wdraw]
+    description: Withdraw amoney from your Vault account and save them to an item.
+permissions:
+  withdraw.withdraw:
+    description: Withdraw money from your account.
+  withdraw.redeem:
+    description: Redeem money from a note.
+    default: true
+  withdraw.admin:
+    description: Reload command permission
